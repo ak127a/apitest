@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head></head>
-  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head></head>
+    <body>
     <!--
     BEFORE RUNNING:
     ---------------
@@ -20,10 +20,10 @@
     function makeApiCall() {
       var params = {
         // The ID of the spreadsheet to retrieve data from.
-        spreadsheetId: '1wCke5cO_JgbtAgERQbZDnFTZmFfTgGnppStQ6QI3aYY',  // TODO: Update placeholder value.
+        spreadsheetId: '15RChmLHTfliVKDI-jg0U9HlnEen9FQte7u8nWyJ7OZ0',  // TODO: Update placeholder value.
 
         // The A1 notation of the values to retrieve.
-        range: 'Sheet1',  // TODO: Update placeholder value.
+        range: 'Class 1',  // TODO: Update placeholder value.
 
         // How values should be represented in the output.
         // The default render option is ValueRenderOption.FORMATTED_VALUE.
@@ -71,16 +71,11 @@
     }
 
     function handleClientLoad() {gapi.load('client:auth2', initClient);}
-    
+
         function updateSignInStatus(isSignedIn) {
         makeApiCall();
     }
     </script>
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-    <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
-    <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
-  </body>
-</html>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+    </body>
+    </html>
